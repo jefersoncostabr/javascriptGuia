@@ -1,0 +1,28 @@
+insertAdjacentHTML
+
+    document.head.insertAdjacentHTML(
+        //onde será inserido
+        'beforeend',
+        //html a ser inserido
+        '<style>.elemento{color: red !inportant;}<style>'
+    );
+
+    //onde será inserido opções:
+        beforebegin -> antes
+        afterbegin -> dentro no inicio
+        beforeend -> dentro no final
+        afterend -> após
+
+createElement/appendChild
+
+    let elementoPai = document.getElementById('container');
+    let novo elemento = document.creatElement('p');
+
+    //atribuir paternidade
+    elemetoPai.appendChild(novoElemento);
+
+innerHtml
+
+    let elementoPai;
+    elementoPai.innerHtml = elemento;
+    elemento += '<button> ok </button>';

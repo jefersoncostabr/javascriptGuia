@@ -1,0 +1,21 @@
+// Adicionar corpo de uma tabela já existente
+// Vc deve criar a talbela no HTML antes e passar o id do corpo da tabela
+
+const fazTabela = function(){
+
+    // vai conter a tabela
+    let elemento = ""; 
+        
+    //lista é a lista de intens epara cada um é feito o código abaixo
+    for (let i = 0; i < lista.length; i++) {
+        elemento += "<tr> <td>" + lista[i].chave + "</td></tr>";
+    }
+    
+    // Dar nome para o elemento que conterá o corpo da tabela
+    const corpoTabela = document.getElementById("tabelaBody");
+    
+    // Adiciona o corpo da tabela contido no elemento ao HTML
+    corpoTabela.innerHTML = elemento;    
+}
+
+fazTabela(lista);

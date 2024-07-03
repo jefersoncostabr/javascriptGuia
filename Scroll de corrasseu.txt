@@ -1,0 +1,20 @@
+Scroll de tela para carrosseu
+
+    elemento.scollTo({
+        left: elemento.scrollLeft +1,
+        behavior: 'auto'
+    });
+
+    setInterval(scrola, 40);
+
+    com css
+
+    @Keyframes scrollAnimation
+        0%
+            transform: traslatex(50%)
+        100%
+            transform: traslatex(-150%)
+
+Scroll de tela comum
+
+    window.scrollTo({top:150, behavior: 'smopth'});

@@ -1,0 +1,32 @@
+Funções
+
+Declaração de função
+    function nome(parâmetro){//ação};
+
+Expressão de função
+    let var = function(parâmetro){//ação};
+
+Função auto invocada -> ()();
+    (função)();
+    (function(parametro){//ação})();
+
+    arrow function auto invocada
+        (()=> //ação)();
+
+Arrow function -> ()=>
+    let nome = (parâmetro)=> //ação; 
+    
+    -> se for uma linha não precisa de chave ({}) nem return
+        se for apenas um parâmetro não precisa de ()
+        let nome = paramero => //ação;
+    
+    arrow function sem parâmetro
+        let nome = ()=> //ação
+
+    arrow function auto invocada
+        (()=> //ação)();
+
+Funções devem ser pequenas e fazer uma coisa de cada vez
+Funções podem ter microserviços que são funções menores com menos resonsabilidade dentro delas
+Closure -> fechamento -> escopo lexo onde foi criado
+função void não retornanada

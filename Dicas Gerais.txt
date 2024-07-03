@@ -1,0 +1,116 @@
+Interação com o usuário
+    alert('texto')
+    prompt('texto')
+    confirm('texto') -> etorna true ou false
+
+Variavel
+    Tipo    Escopo      Alterável/Inalterável
+    var ->  Global ->   Alterável
+    let ->  Bloco ->    Alterável
+    const ->Bloco ->    Inalterável
+
+função
+    função auto invocável
+        (função)();
+        (()=>{//ação})();
+        (function(){//ação})();
+
+Eventos
+    click
+    mouseover
+    keydown
+    keyup
+    focus
+    loadDomContentLoaded
+
+Adicionar evento a elemento
+    elemento.addEventListener("evento", function(){//ação});
+
+Executa ao completar carregamnto da página
+    window.addEventListener("load", functionNome);
+    
+Executa quando o DOM está pronto    
+    document.addEventListener("DOMContentLoaded", functionNome);
+
+Selecionar elemento e mudar valor/ conteúdo
+    document.forma-de-selecionar("identificação-do elemento").O-que-será-feito;
+
+    document.querySelector("#elemento").innerHTML = "Novo";
+    document.getElementById("elemento").value = "Novo";
+    document.getElementByClassName("elemento").innerText = "Novo";
+    document.getElementByTagName("div").innerText = "Novo";
+
+Operadores lógicos Sinais e simbolos
+atribuição
+    = ->  igualdade
+comparação
+    != -> diferença
+    == -> igual simples
+    === -> estritamente igual
+
+    ! -> não
+    && -> e
+    || -> ou
+
+    += ->concatena
+    ++ -> incremento
+    +=1 -> incremento
+    +1 -> incremento
+
+Troca texto do elemento
+    elemento.add addEventListener('click', function(){
+        elementoAlvo.innerHTML = "novo Texto";
+    });
+
+if, else if e if else
+    if(condição){}else if{}else{};
+
+loop
+    while(condição){};
+    do{}while(condição);
+    for(var; cond true; incremento){};
+
+Objeto {} chave/valor
+
+Array [] lista
+
+Array de objeto [{}]
+
+setTimout(//ação, 1000); -> uma vez
+setInterval(//ação, 1000); -> intermitente
+
+aleatóriedade
+    mathfloor(math.randon()*30)
+
+templete string é com aspas invertidas
+    let teste = `Texto ${teste}`
+
+mostra o navegador
+    window.document.write(navigator.userAgent);
+
+Retorna o endereço da página
+    window.document.url
+
+Seleciona item pelo tipo e indice
+    let var = document.getElementByTagName('p')[1];
+
+Alterar Css 
+    element.style.color = 'red';
+
+Operador condicional ternário
+    expressão ? caso true : caso false
+
+Criar elemento e atribuir paternidade *Mais detalhes no arquivo separado
+    .createElement('div')
+    .appendChild(variavel)
+
+Pegar tamanho do elemento
+    elemento.offsetWidth ->elementos comuns
+
+    window.innerWidth -> Retorna o tamanho da janela
+
+Métodos
+
+.toLowerCase() -> deixa minusculo
+.length -> quantidade de caracteres
+.trim -> remove espaços extra
