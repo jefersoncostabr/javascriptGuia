@@ -109,8 +109,55 @@ Pegar tamanho do elemento
 
     window.innerWidth -> Retorna o tamanho da janela
 
+Try catch -> uma forma de tratar erros usando promece
+
+try{} catch(erro){}
+
+na controller
+    try{} catch(erro){
+        res.status(500).json({message:`${erro.message} - falha`});
+    }
+
+Ordem crescente usando expressão regular
+
+    Limitador de expressão regular -> / / -> barra invertida
+
+    elemento.sort(/[a-zA-Z]/); -> organiza em ordem crescente de letras
+
+Switch -> Estrutura de controle
+    switch (expressão){
+        case valor1:
+            //ação 1 caso valor1 === expressão
+            break;
+        case valor2:
+            //ação 2 caso valor2 === expressão
+            break;
+        default;
+            //ação para nenum dos anteriores
+    }
+
+
 Métodos
 
 .toLowerCase() -> deixa minusculo
 .length -> quantidade de caracteres
 .trim -> remove espaços extra
+.typeof variável -> retorna o tipo da variável
+.trim -> remove espaços extra
+.createElement('div') -> cria elemento
+.appendChild(elemento) -> atribui paternidade
+.toLowerCase() -> deixa minusculo
+.length -> retorna a qtd de caracteres
+.math.round() -> arredonda para o inteiro mais próximo
+.math.floor() -> arredanda pra baixo
+.math.max() -> retorna o mair
+.math.random() -> randômico aleatoriedade
+.test(variavel) -> testa se uma string segue um padrão
+.split -> divide e coloca numa Array
+.slice -> cria uma copia de pate da Array
+    sintaxe -> .slice(index,qtd, novo)
+    .slice(index,0 ,novo) -> copia
+    .slice(index,1) -> apaga
+.splice(indexDoRemovido,1) -> remove o indicado 
+.value.replace('antigo','novo') -> cria apartir do resultado (value tem que ser string)
+.sort() -> reorganiza lista conforme instrução
