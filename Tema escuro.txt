@@ -1,0 +1,23 @@
+Tema escuro
+
+Pode ser feito de várias maneiras 
+
+1- trocando o tema alternativo através de uma classe que contem as formatações
+
+    let temaAlternativo = true
+    function mudatema(){
+        if (temaAlternativo){
+            //colocar as mudanças
+            elemento.classList.add('mudaTemaClass');
+            temaAlternativo = false;
+        } else {
+            elemento.classListremove('mudaTemaClass');
+            temaAlternativo = true;
+        }
+    }
+
+Mudando style diretamente com js
+    Colocando
+        elemento.style.color = 'white';
+    Tirando
+        elemento.style.color = '';
