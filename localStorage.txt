@@ -1,0 +1,43 @@
+Etapas para armazenar e recuparar no localStorage
+
+1º -> Transformar elemento em string
+    JSON.stringify() -> converte obj js em uma string js
+    toString() -> converte em string
+    
+2º -> Colocar no localStorage
+    localStorage.setItem()
+
+3º -> Transformar em objeto javascript{}
+    JSON.parse()
+
+4º -> Elemento no código
+    Aqui já pode usar o objeto recuperado
+
+
+Guardar/ Store
+    let elemento = {teste, teste1};
+    let elementoString = JSON.stringify(elemento);
+    //Nome do elemento no LS, qual obj que vai
+    localStorage.setItem('nome', elementoString);
+
+    código de linha única
+        localStorage.setItem('nome', JSON.stringify('elemento'));
+
+Pegar/ Retrive
+    let elementoLocalStorage = localStorage.getItem('nome');
+    let elementoObj = JSON.parse(elementoLocalStorage);
+
+    código de linha única
+        let elementoLocalStorage = JSON.parse(localStorage.getItem('nome'));
+
+Apagar/ Delete
+    localStorage.removeItem('nome');
+
+
+Transforma em JSON
+    let variavel = JSON.stringify(elemento);
+
+localStorage    .setItem
+                .getItem
+                .clear
+                .removeItem

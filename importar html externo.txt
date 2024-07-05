@@ -1,0 +1,17 @@
+Importar html externo
+
+    Criar div que receberá o conteúdo da importação
+
+    //Esta função permanece a mesma para todos html
+    function carregarConteúdo(idElemento, arquivoCaminho){
+        fetch(arquivoCaminho);
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(idElemento).innerHTML = data;
+        });
+    }
+
+    //uma linha dessa para cada html importado
+    //1º -> id do elemento que irá receber
+    //2º -> caminho do html externo
+    carregarConteudo('novoId', './src/novoHtml.html');
