@@ -1,7 +1,0 @@
-export
-    para exportar simplesmente coloque export antes do item a ser exportado
-
-Import
-    para importar coloque:
-        import{o que?} from './caminho'
-        import {var1, var2} from './script.js'

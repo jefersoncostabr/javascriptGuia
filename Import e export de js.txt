@@ -1,0 +1,19 @@
+export
+    para exportar simplesmente coloque export antes do item a ser exportado
+
+Import
+    o html que vai receber o import deve ter type: "modulo"
+    para importar coloque:
+        import{o que?} from './caminho'
+        import {var1, var2} from './script.js'
+        import var1 from './script.js'
+        import nomeado
+            import {variavel as v} from './script.js'
+
+
+Export default
+    exportação padrão do arquivo
+    
+import default nomado        
+    import novoNome from './script.js'
+
