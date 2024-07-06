@@ -1,0 +1,65 @@
+Loopings
+
+    for
+    for Each
+    for in
+    for of
+    .map
+    for else
+    if else if
+    while
+    do while
+    ternario
+
+for
+    for (variavel;condição;incremento){//ação}
+
+for each
+    let array = [1,2,3];
+    array.forEach(function(elemento, indice, array){
+        //faz a ação uma vez para cada item da array
+        console.log(elemento);
+        console.log(indice);
+        console.log(array);
+    });
+
+for in
+    for(let chave in array){
+        //ação p cada chave da array
+    }
+
+    ex: ${chave} -> chamar chave
+        ${array[chave]} -> chamar valor
+
+for of
+    for(let elemento of array){
+        //ação para cada um
+    }
+
+.map
+    const novaArray = array.map(function(elemento){
+        return elemento +1;
+    });
+
+    refatorado p arraw function 
+        const novaArray = array.map((elemento) =>elemento +1);
+
+for else
+    for(var teste=1; teste<=5; teste--){
+        if(var==true){//ação}else{//ação}
+        //ação realizada quando nenhuma condição do if seja realizada
+    }
+
+if else if
+    if(condição){//ação}else if(condição){//ação} else{//ação}
+
+while
+    while(compaação){//ação //incremento}
+        while(va<=5){//ação var++}
+
+do while
+    do{//ação}while(condição)
+        do{//ação incremento}while(var<=5)
+
+ternário
+    expressão ? //ação : //ação

@@ -1,4 +1,4 @@
-Interação com o usuário
+Interação com o usuário pop up
     alert('texto')
     prompt('texto')
     confirm('texto') -> etorna true ou false
