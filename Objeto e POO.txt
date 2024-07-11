@@ -1,0 +1,126 @@
+Objeto Classe e POO (programação orientada a objeto)
+
+Objeto simples
+    const meuObjeto {
+        chave: valor1,
+        chave: valor2,
+        chave: valor3
+    }
+
+Array de objeto
+    const meuObjeto [{
+        chave: valor1,
+        chave: valor2,
+        chave: valor3
+    }];
+
+Criação de objeto
+    var pessoa = {
+        nome: 'João',
+        idade: 40,
+        estudante: false,
+        cumprimentos: function(){
+            console.log('Olá, sou '+this.nome+' tenho '+this.idade+' anos.')
+        }
+    }
+    //acessar propriedades 
+    pessoa.nome
+    //invocar método
+    pessoa.cumprimetos()
+
+Classe construtora
+    class Pessoa {
+        constructor(nome, idade, estudante) {
+            this.nome = nome;
+            this.idade = idade;
+            this.estudante = estudante;
+        }
+
+        cumprimentos() {
+            console.log(`Olá, sou ${this.nome} tenho ${this.idade} anos.`);
+        }
+    }
+
+    Usando a classe contrutora
+        const joao = new Pessoa('João', 40, false)
+        joao.cumprimentos();
+
+Função construtora
+
+    function Pessoa(nome, idade, estudante) {
+    this.nome = nome;
+    this.idade = idade;
+    this.estudante = estudante;
+
+    this.cumprimentos = function() {
+        console.log(`Olá, sou ${this.nome} tenho ${this.idade} anos.`);
+    };
+    }
+
+    // Criando o João
+    const joao = new Pessoa('João', 40, false);
+
+    // Apresentando o João
+    joao.cumprimentos();
+
+Pegar objeto do arquivo json e procurar item (find/includes)
+    //importa para a variavel lista
+    const lista = require("./arquivo.json");
+    function encontrar(lista, chave, valor){
+        //encontra o primeiro que atende aos requisitos
+        return lista.find(
+            //requisitos: na chave especificada deve incluir o "valor"
+            (item)=> item[chave].includes(valor)
+        );
+    }
+
+    //chama a função de acordo com os parâmetros
+    const encontrado = encontrar(array, 'nomeChave', 'valor');
+    // Verifica se um objeto foi encontrado
+    if (encontrado) {
+        console.log("Objeto encontrado:", encontrado);
+    } else {
+        console.log("Objeto não encontrado.");
+    }
+
+Filtar objeto
+    // recebe por parâmetro a lista de objetos a ser filtrada
+    funtion filtrarPorpriedadeSemOutra(lista, categoriaDesejada){
+        //filter retorna uma lista só com os que passam na filtragem
+        return lista.filter(
+            //condição da filtragem
+            (item)=>{ 
+                return(
+                    item.categoria === categoriaDesejada;
+                )}
+            );
+    }
+
+    const filtrados = filtrarPorpriedadeSemOutra(array, tipo1);
+
+    console.log('Itens encontrados da categoria - tipo1: ', filtrados);
+
+Json
+    json parece objeto js -> usa a mesma notação
+    não usa nome de variável
+    não aceita aspas simples
+    não aceita virgula sobrando
+    funções não são permitidas
+    comentários não são permitidos
+
+    suporta apenas tipos primitivos:    string
+                                        number
+                                        boolean
+                                        null
+
+Requare está disponivel apenas no node e não no navegador
+
+importar json
+    const informacaoJson = require('./arquivo.json');
+converter em objeto
+    const objetivoNovo = Object.Keys(informacaoJson);
+
+transformar em string
+    const stringObjeto = JSON.stringify(elemento);
+retransformar em objeto
+    const objObjeto = JSON.parse(stringObjeto);

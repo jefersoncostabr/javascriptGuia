@@ -1,0 +1,57 @@
+Movimentação para jogo/ interação
+
+Descobrir o código da tecla pressionada
+    alert(event.KeyCode);
+    console.log(event.keyCode);
+
+Movimentar objeto
+    var x=0;
+    if(event.keyCode)="68"{
+        x = x+10;
+        document.getElementById("object").style.left = x + "px";
+    }
+
+keydown
+keyup
+keypress
+
+Movimentação para jogo
+
+document.addEventListener("Keydown", TeclaDw);
+document.addEventListener("Keyup", TeclaUp);
+
+function teclaDw(){
+    let tecla = event.keycode; -> detecta o pressionar da tecla
+    if(tecla == 37){ -> compara se é a tecla certa
+        dx = -1; -> ativa a diração do movimento. A velocidade é visto separado
+    }
+}
+
+function teclaUp(){
+    let tecla = event.keycode; -> detecta o pressionar da tecla
+    if(tecla == 37){ -> compara se é a tecla certa
+        dx = 0; -> desativa o movimento
+    }
+}
+
+function enter Frame(){
+    //vel é velocidade definida previamente
+    px += dx * vel;
+    py += dy * vel;
+
+    //obj é o player
+    obj.style.left = px + "px";
+    obj.style.top = py + "px";
+}
+
+//chama a movimentação e define a fluidez
+setInterval(enterFrame, 20);
+
+
+Outra ora de fazer movimento
+
+    //esta variavel que movimenta o objeto
+    let position = 0;
+    elemento.style.top = position+""px
+    //position relative permite que o objeto se mova
+    elemento.style.position = 'relative'

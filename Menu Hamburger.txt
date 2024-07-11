@@ -1,0 +1,24 @@
+Aparecer e esconder Menu Hamburger
+
+&#9776 -> caractere do menu hamburger
+
+
+Aparecer
+    const menuHamburger = getElementById("menuHam")
+    const wraperMenuHam = getElementById("wraperMenuHam")
+
+    menuHam.addEventListener("click", function(){
+        wraperMenuHam.display = block
+    });
+
+Desaparecer menu
+
+Desaparece ao clicar no item do menu e faz a função do botão clicado
+
+const itemMenu = getElementById("itemMenu");
+
+itemMenu.addEventListener("click", function(){
+    wraperMenuHam.display = none;
+});
+
+*Esse método é muito seco se fizer algo como aumentar e diminuir o heigth pode ser mais suave

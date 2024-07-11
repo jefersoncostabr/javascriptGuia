@@ -1,0 +1,93 @@
+Métodos
+
+.toLowerCase() -> deixa minusculo
+.length -> quantidade de caracteres
+.trim -> remove espaços extra
+.typeof variável -> retorna o tipo da variável
+.trim -> remove espaços extra
+.createElement('div') -> cria elemento
+.appendChild(elemento) -> atribui paternidade
+.toLowerCase() -> deixa minusculo
+.length -> retorna a qtd de caracteres
+.math.round() -> arredonda para o inteiro mais próximo
+.math.floor() -> arredanda pra baixo
+.math.max() -> retorna o mair
+.math.random() -> randômico aleatoriedade
+.test(variavel) -> testa se uma string segue um padrão
+.split -> divide e coloca numa Array
+.slice -> cria uma copia de pate da Array
+    sintaxe -> .slice(index,qtd, novo)
+    .slice(index,0 ,novo) -> copia
+    .slice(index,1) -> apaga
+.splice(indexDoRemovido,1) -> remove o indicado 
+.value.replace('antigo','novo') -> cria apartir do resultado (value tem que ser string)
+.sort() -> reorganiza lista conforme instrução
+Criar array nova/ Método de Objetos
+    .keys() -> array nova usando chaves
+        let array1 = Object.keys(array)
+    .values() -> array nova usando valores
+        let array2 = Object.values(array)
+    .entries() -> array nova usando chave e valor respectivo
+        let arra3 = Object.entries(array)
+.indexOf() -> retora indice da primeira ocorrência
+    array.indexOf(elemento, indexInicial)
+.findIndex() -> retorna indice da primeira ocorrência especificada por função
+    array.findIndex(função(elemento, indice, array), valorDeThis);
+        array.findIndex(funçãoCallback, valorDeThis);
+            array.findIndex(elemento => elemento > 0);
+.includes() ->retorna true ou false se existe na array
+    string.includes(valor, indiceInicial);
+.find() -> encontra elemento que satisfaça a condição
+    array.find(função(elemento, indice, array), valorDeThis);
+.some() -> retorna true ou false se tiver elemento que satisfaça uma das condições
+    array.some(funçãoCallback);
+.map() -> para iterar sobre todos os elementos e aplicar uma função a cada um, retornando uma nova array com o resultado
+    array.map(funcaoCallback);
+.toFixed() -> convert numero em string, e com uma quantidade de casas decimais conforme especificado em parametros
+    (9,999).toFixed(2) -> 9,9
+.filter() -> retorna os que passaram pelo filtro
+    const arrayNova = arrayAntiga.filter((elemento)=> elemento length < 4);
+.reduce() -> transforma array em um item conform argumentos
+    array.reduce(funçãoCallback, valorInicial);
+.set() -> remove repetidos
+    // Criar um novo Set
+    const set = new Set();
+
+    // Iterar pelo array original e adicionar elementos ao Set
+    for (const elemento of arrayComRepetidos) {
+        set.add(elemento);
+    }
+
+    // Criar um novo array vazio
+        const arraySemRepetidos = [];
+
+    // Iterar pelo Set e adicionar elementos ao novo array
+        for (const elemento of set) {
+        arraySemRepetidos.push(elemento);
+    }
+
+    console.log("Array original com repetidos:", arrayComRepetidos);
+    console.log("Array sem repetidos:", arraySemRepetidos);
+
+    OU
+
+    const novoArray = [...new Set(arrayComRepetidos)];
+
+.replace() -> troca conteúdo de string por novo conteúdo
+    let textoNovo = texto.replace('texto Antigo', 'texto Novo');
+    let variavel2 = variavel1.replace(RegEx, function)
+
+    Todas as ocorrências -> g
+        .replace(/textoAntigo/g,"novoTexto")
+    Ignora case sensitive -> i
+        .replace(/texto antigo/gi,"novoTexto")
+    Remove o que não é número
+        .replace(/\D+/g,"").replace('-','')
+
+    com função funcaoCallback
+        .replace(/textoAntigo/gi, 
+            (valor, inex, original)=>{
+            if(index !==0){
+                return "novoTexto"
+            }
+        });
