@@ -29,6 +29,10 @@ Criação de objeto
     pessoa.cumprimetos()
 
 Classe construtora
+    Classe facilita a economia de código
+    Herança - pode criar uma classe dentro da outra herdando características do pai
+    /cuidado para não se perder na herança
+
     class Pessoa {
         constructor(nome, idade, estudante) {
             this.nome = nome;
@@ -44,6 +48,7 @@ Classe construtora
     Usando a classe contrutora
         const joao = new Pessoa('João', 40, false)
         joao.cumprimentos();
+            
 
 Função construtora
 
@@ -124,3 +129,16 @@ transformar em string
     const stringObjeto = JSON.stringify(elemento);
 retransformar em objeto
     const objObjeto = JSON.parse(stringObjeto);
+
+
+Cadeia de prototipo
+    //object1 pega as propriedades do object2
+    Object.setPrototypeOf(Object1, object2);
+
+Extends
+    class NovaClasse extends NomeDaClasse
+
+Encapsulamento
+
+
+Polimorfismo

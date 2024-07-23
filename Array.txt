@@ -54,3 +54,9 @@ Organizar lista de string
 
     const listaOrdenada = ordena(minhaArray);
     console.log(listaOrdenada);
+
+
+Lista com duas dimensões 
+    const novaArray = [array1, array2]
+    //array 1 item 1
+    console.log([0][0])

@@ -136,6 +136,15 @@ Switch -> Estrutura de controle
             //ação para nenum dos anteriores
     }
 
+Console
+    .log()
+    .group()
+    .table()
+    .timeEnd()
+    .error()
+
+    console.table(array, qtd colunas) -> exibe em forma de tabela
+
 Descobrir o código da tecla pressionada
     alert(event.KeyCode);
     console.log(event.keyCode);
